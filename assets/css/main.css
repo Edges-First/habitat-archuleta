@@ -2048,8 +2048,7 @@ input, select, textarea {
 	#header {
 		position: relative;
 		background: #ffffff;
-		border-bottom: solid 1px #ccc;
-		padding: 0 0 4em 0;
+		padding: 0;
 		text-align: center;
 	}
 
@@ -2173,7 +2172,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		text-align: center;
+		text-align: left;
 		overflow: hidden;
 		padding-top: 3rem;
 	}
@@ -2868,10 +2867,20 @@ body {
 @media only screen and (min-width: 0rem) {
   #sbsr-2289 {
     overflow: hidden;
+		margin-bottom: 4rem !important;
   }
   .cs-container {
+		display: flex;
+		flex-direction: column;
 		padding: 0 1rem;
   }
+	#sbsr-2289 .mobile-swap-order .cs-content {
+		order: 0;
+	}
+	#sbsr-2289 .mobile-swap-order .cs-image-group {
+		order: 1;
+		margin-top: 2rem;
+	}
   #sbsr-2289 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -3052,11 +3061,17 @@ body {
     gap: 1.25rem;
   }
 	#sbsr-2289 {
-		margin-bottom: 0;
+		margin-bottom: 4rem !important;
 	}
 	#sbsr-2289 .cs-container {
 		align-items: center;
 		display: flex;
+	}
+	#sbsr-2289 .desktop-swap-order .cs-content {
+		order: 1;
+	}
+	#sbsr-2289 .desktop-swap-order .cs-image-group {
+		order: 0;
 	}
   #sbsr-2289 .cs-content {
 		display: flex;
