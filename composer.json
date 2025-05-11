@@ -1,0 +1,26 @@
+{
+	"name": "habitat-archuleta/project_name",
+	"type": "wordpress-theme",
+	"authors": [
+		{
+			"name": "House of Giants",
+			"email": "hello@houseofgiants.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"HabitatArchuleta\\": "includes/classes/"
+		}
+	},
+	"require-dev": {
+		"10up/phpcs-composer": "dev-master"
+	},
+	"scripts": {
+		"lint": [
+			"phpcs ."
+		]
+	}
+}

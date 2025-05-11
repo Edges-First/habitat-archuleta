@@ -1,0 +1,34 @@
+/*
+ * Colors
+ */
+:root {
+	--c-black: #000000;
+	--c-white: #ffffff;
+
+	--ff-body: "Helvetica Neue", sans-serif;
+	--ff-heading: "Helvetica Neue", sans-serif;
+
+	--fs-2xs: 0.875rem; /* 14px */
+	--fs-xs: 1rem; /* 16px */
+	--fs-s: 1.25rem; /* 20px */
+	--fs-base: 1.5rem; /* 24px */
+	--fs-m: 1.875rem; /* 30px */
+	--fs-l: 2.3125rem; /* 37px */
+	--fs-xl: 2.6875rem; /* 43px */
+	--fs-2xl: 3.6875rem; /* 59px */
+	--fs-3xl: 6.25rem; /* 100px */
+	--fs-4xl: 7.5625rem; /* 121px */
+
+	--sp-2xs: var(--fs-2xs);
+	--sp-xs: var(--fs-xs);
+	--sp-s: var(--fs-s);
+	--sp-base: var(--fs-base);
+	--sp-m: var(--fs-m);
+	--sp-l: var(--fs-l);
+	--sp-xl: var(--fs-xl);
+	--sp-2xl: var(--fs-2xl);
+	--sp-3xl: var(--fs-3xl);
+	--sp-4xl: var(--fs-4xl);
+
+	--w-base: 1280px;
+}

@@ -1,0 +1,28 @@
+#a11y-catcher {
+	& > a {
+		background-color: var(--c-white);
+		color: var(--c-black);
+		display: block;
+		left: -999em;
+		padding: 0.5rem 1rem;
+		position: absolute;
+		text-align: center;
+		text-decoration: none;
+		top: -999em;
+
+		&:focus {
+			position: static;
+		}
+	}
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

@@ -1,0 +1,209 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"slug": "brand-blue",
+					"color": "#00AFD7",
+					"name": "Brand Blue"
+				},
+				{
+					"slug": "brand-blue-dark",
+					"color": "#002F6C",
+					"name": "Brand Blue Dark"
+				},
+				{
+					"slug": "brand-green",
+					"color": "#C4D600",
+					"name": "Brand Green"
+				},
+				{
+					"slug": "brand-green-dark",
+					"color": "#43B02A",
+					"name": "Brand Green Dark"
+				},
+				{
+					"slug": "brand-yellow",
+					"color": "#FFD100",
+					"name": "Brand Yellow"
+				},
+				{
+					"slug": "brand-orange",
+					"color": "#FF671F",
+					"name": "Brand Orange"
+				},
+				{
+					"slug": "brand-gray",
+					"color": "#888B8D",
+					"name": "Brand Gray"
+				},
+				{
+					"slug": "brand-gray-red",
+					"color": "#A4343A",
+					"name": "Brand Gray Red"
+				},
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"fluid": true,
+			"lineHeight": false,
+			"letterSpacing": false,
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "var(--fs-base)",
+					"name": "Small"
+				},
+				{
+					"slug": "p",
+					"size": "var(--fs-m)",
+					"fluid": {
+						"min": "var(--fs-base)",
+						"max": "var(--fs-m)"
+					},
+					"name": "Medium (default)"
+				},
+				{
+					"slug": "large",
+					"fluid": {
+						"min": "var(--fs-xl)",
+						"max": "var(--fs-4xl)"
+					},
+					"size": "var(--fs-4xl)",
+					"name": "Large"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1320px",
+			"wideSize": "100vw"
+		},
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"padding": true,
+					"blockSpacing": true
+				}
+			},
+			"core/separator": {
+				"spacing": {
+					"margin": true
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"fontSizes": [
+						{
+							"slug": "h1",
+							"size": "var(--fs-4xl)",
+							"name": "Like h1"
+						},
+						{
+							"slug": "h2",
+							"fluid": {
+								"min": "var(--fs-l)",
+								"max": "var(--fs-4xl)"
+							},
+							"size": "var(--fs-4xl)",
+							"name": "Like h2"
+						},
+						{
+							"slug": "h3",
+							"size": "var(--fs-l)",
+							"name": "Like h3"
+						},
+						{
+							"slug": "h4",
+							"size": "var(--fs-m)",
+							"name": "Like h4"
+						}
+					]
+				}
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--off-black)",
+			"text": "var(--wp--preset--color--off-white)"
+		},
+		"elements": {
+			"button": {
+				"border": {
+					"color": "var(--wp--preset--color--white)",
+					"radius": "0",
+					"style": "solid",
+					"width": "1px"
+				},
+				"color": {
+					"background": "transparent",
+					"text": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontFamily": "var(--ff-heading)",
+					"fontSize": "var(--fs-s)",
+					"lineHeight": "1.2",
+					"textTransform": "uppercase"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.75rem",
+						"right": "1.5rem",
+						"bottom": "0.75rem",
+						"left": "1.5rem"
+					}
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				":focus": {
+					"typography": {
+						"textDecoration": "underline dashed"
+					}
+				},
+				":active": {
+					"color": {
+						"text": "var(--wp--preset--color--secondary)"
+					},
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				"typography": {
+					"textDecoration": "underline"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "var(--wp--preset--spacing--40)",
+				"bottom": "var(--wp--preset--spacing--40)"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--ff-body)",
+			"fontSize": "var(--fs-base)"
+		}
+	}
+}
