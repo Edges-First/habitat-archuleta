@@ -1,0 +1,39 @@
+name: Deploy to WP Engine Development
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '23'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: GitHub Action Deploy to WP Engine Development
+      uses: wpengine/github-action-wpe-site-deploy@v3
+      with:
+        # Deploy vars
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
+        WPE_ENV: habitatarchdev
+
+        # Deploy Options
+        SRC_PATH: "."
+        REMOTE_PATH: "wp-content/themes/habitat-archuleta"
+        # PHP_LINT: true
+        FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from=.deployignore
+        # SCRIPT: "deployments.sh"
