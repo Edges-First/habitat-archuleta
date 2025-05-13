@@ -1,0 +1,14 @@
+.social-links {
+	align-items: center;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+
+	& a {
+		&:hover svg path {
+			fill: var(--c-brand-blue);
+		}
+	}
+}

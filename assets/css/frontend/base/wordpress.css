@@ -35,3 +35,15 @@
 .wp-caption-text {
 	margin: 0;
 }
+
+.has-large-font-size {
+	font-size: var(--fs-m) !important;
+}
+
+.has-brand-green-background-color {
+	color: var(--c-black);
+
+	&:hover {
+		background-color: var(--c-brand-green-dark) !important;
+	}
+}

@@ -1,0 +1,7 @@
+.wp-block-button__link {
+	border: none;
+	font-weight: 700;
+	padding: 0.25rem 2rem;
+	text-transform: lowercase;
+	width: auto;
+}

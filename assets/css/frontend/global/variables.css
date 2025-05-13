@@ -2,18 +2,27 @@
  * Colors
  */
 :root {
+	--c-brand-blue: #00AFD7;
+	--c-brand-blue-dark: #002F6C;
+	--c-brand-green: #C4D600;
+	--c-brand-green-dark: #43B02A;
+	--c-brand-yellow: #FFD100;
+	--c-brand-orange: #FF671F;
+	--c-brand-gray: #888B8D;
+	--c-brand-gray-red: #E51937;
+
 	--c-black: #000000;
 	--c-white: #ffffff;
 
 	--ff-body: "Helvetica Neue", sans-serif;
 	--ff-heading: "Helvetica Neue", sans-serif;
 
-	--fs-2xs: 0.875rem; /* 14px */
-	--fs-xs: 1rem; /* 16px */
-	--fs-s: 1.25rem; /* 20px */
-	--fs-base: 1.5rem; /* 24px */
-	--fs-m: 1.875rem; /* 30px */
-	--fs-l: 2.3125rem; /* 37px */
+	--fs-2xs: 0.75rem; /* 12px */
+	--fs-xs: 0.875rem; /* 14px */
+	--fs-s: 1rem; /* 16px */
+	--fs-base: 1.25rem; /* 20px */
+	--fs-m: 1.5rem; /* 24px */
+	--fs-l: 1.875rem; /* 30px */
 	--fs-xl: 2.6875rem; /* 43px */
 	--fs-2xl: 3.6875rem; /* 59px */
 	--fs-3xl: 6.25rem; /* 100px */

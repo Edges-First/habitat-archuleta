@@ -17,11 +17,12 @@ require_once HABITAT_ARCHULETA_INC . 'overrides.php';
 require_once HABITAT_ARCHULETA_INC . 'template-tags.php';
 require_once HABITAT_ARCHULETA_INC . 'utility.php';
 require_once HABITAT_ARCHULETA_INC . 'blocks.php';
+require_once HABITAT_ARCHULETA_INC . 'customizer.php';
 
 // Run the setup functions.
 HabitatArchuleta\Core\setup();
 HabitatArchuleta\Blocks\setup();
-
+HabitatArchuleta\Customizer\setup();
 // Require Composer autoloader if it exists.
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	require_once 'vendor/autoload.php';
