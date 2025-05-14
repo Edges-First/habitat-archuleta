@@ -83,6 +83,7 @@
 		"webpackbar": "^5.0.2"
 	},
 	"dependencies": {
+		"gsap": "^3.13.0",
 		"normalize.css": "^8.0.1",
 		"prop-types": "^15.8.1"
 	}

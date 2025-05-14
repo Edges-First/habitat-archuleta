@@ -7,13 +7,15 @@
 
 get_header(); ?>
 
+<main id="main" class="site-main">
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<main id="main">
+			<article id="page-<?php the_ID(); ?>" <?php post_class( 'torso' ); ?>>
 				<?php the_content(); ?>
-			</main>
+			</article>
 		<?php endwhile; ?>
 	<?php endif; ?>
+</main>
 
 <?php
 get_footer();
