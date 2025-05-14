@@ -1,7 +1,25 @@
 /**
- * Habitat Archuleta - Editor Styles
- * https://www.habitatarchuleta.org
+ * HeliBlack - Editor Styles
+ * https://heli.black
  *
- * Copyright (c) 2025 Edges First, LLC
+ * Copyright (c) 2017 heli
  * Licensed under the MIT license.
  */
+
+ @import url("base");
+ @import url("global");
+ @import url("components");
+
+ .editor-styles-wrapper {
+	background-color: var(--c-white);
+
+	 & .editor-visual-editor__post-title-wrapper {
+			border-bottom: 5px solid var(--c-black);
+			margin-bottom: 4rem;
+			padding-bottom: 1rem;
+
+		 & h1 {
+			font-size: var(--fs-l);
+		 }
+	 }
+ }

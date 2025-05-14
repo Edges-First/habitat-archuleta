@@ -43,7 +43,12 @@
 	 padding: 2rem var(--sp-base);
 
 	 @media (--bp-large) {
-		 padding: 1rem var(--sp-base);
+		margin: 2rem 0;
+		padding: 1rem 0;
+
+		&.has-background {
+			padding: 3rem 0;
+		}
 	 }
  }
 

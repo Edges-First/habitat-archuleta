@@ -1,4 +1,19 @@
 /* WordPress generated classes */
+:root :where(.is-layout-flex) {
+	gap: 24px;
+
+	&.is-style-mobile-gap-gone {
+		gap: 0;
+	}
+
+	@media (--bp-medium) {
+		gap: 48px;
+
+		&.is-style-mobile-gap-gone {
+			gap: 48px;
+		}
+	}
+}
 
 .alignleft {
 	float: left;
@@ -34,6 +49,14 @@
 
 .wp-caption-text {
 	margin: 0;
+}
+
+.wp-block-list {
+	padding-inline-start: var(--sp-base);
+
+	& li {
+		margin: 0.5rem 0;
+	}
 }
 
 .has-large-font-size {

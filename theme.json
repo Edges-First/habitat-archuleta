@@ -41,6 +41,11 @@
 					"name": "Brand Gray"
 				},
 				{
+					"slug": "brand-gray-light",
+					"color": "#888B8D26",
+					"name": "Brand Gray Light"
+				},
+				{
 					"slug": "brand-gray-red",
 					"color": "#A4343A",
 					"name": "Brand Gray Red"

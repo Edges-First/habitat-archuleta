@@ -9,7 +9,8 @@
 	--c-brand-yellow: #FFD100;
 	--c-brand-orange: #FF671F;
 	--c-brand-gray: #888B8D;
-	--c-brand-gray-red: #E51937;
+	--c-brand-gray-light: #888B8D26;
+	--c-brand-red: #E51937;
 
 	--c-black: #000000;
 	--c-white: #ffffff;
@@ -21,9 +22,9 @@
 	--fs-xs: 0.875rem; /* 14px */
 	--fs-s: 1rem; /* 16px */
 	--fs-base: 1.25rem; /* 20px */
-	--fs-m: 1.5rem; /* 24px */
-	--fs-l: 1.875rem; /* 30px */
-	--fs-xl: 2.6875rem; /* 43px */
+	--fs-m: 1.25rem; /* 24px */
+	--fs-l: 1.5rem; /* 30px */
+	--fs-xl: 1.875rem; /* 43px */
 	--fs-2xl: 3.6875rem; /* 59px */
 	--fs-3xl: 6.25rem; /* 100px */
 	--fs-4xl: 7.5625rem; /* 121px */

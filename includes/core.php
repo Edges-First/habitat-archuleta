@@ -62,6 +62,22 @@ function theme_setup() {
 			'primary' => esc_html__( 'Primary Menu', 'habitat-archuleta' ),
 		)
 	);
+
+	register_block_style(
+		'core/image',
+		array(
+			'name'  => 'is-cover',
+			'label' => __( 'Cover' ),
+		)
+	);
+
+	register_block_style(
+		'core/columns',
+		array(
+			'name'  => 'mobile-gap-gone',
+			'label' => __( 'Remove Gap on Mobile' ),
+		)
+	);
 }
 
 /**
