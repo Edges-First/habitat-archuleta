@@ -1,5 +1,23 @@
+<?php
+$site_notice = get_theme_mod( 'habitat_archuleta_site_notice' );
+$donate_link = get_theme_mod( 'habitat_archuleta_donate_link' );
+?>
+
 <header class="header is-at-top">
-	<div class="container">
+	<div class="eyebrow-nav">
+		<div class="container">
+			<div class="site-notice">
+				<?php echo esc_html( $site_notice ); ?>
+			</div>
+			<div class="eyebrow-actions">
+				<?php get_template_part( 'partials/social' ); ?>
+				<a href="<?php echo esc_url( $donate_link ); ?>" class="wp-block-button__link has-brand-green-background-color has-background has-large-font-size">
+					Donate
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container nav-container">
 		<a itemscope itemtype="https://schema.org/Organization" itemprop="url" href="<?php echo esc_url(bloginfo('siteurl')); ?>" class="logo">
 			<img class="logo-white" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="<?php echo esc_html( get_bloginfo( 'name' ) ); ?> White Logo">
 			<img class="logo-color" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-color.jpg'; ?>" alt="<?php echo esc_html( get_bloginfo( 'name' ) ); ?> Color Logo">
