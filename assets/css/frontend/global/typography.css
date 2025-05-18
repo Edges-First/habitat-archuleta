@@ -15,8 +15,12 @@ h6 {
 }
 
 h1 {
-	font-size: var(--fs-2xl);
+	font-size: var(--fs-xl);
 	line-height: 1.3;
+
+	& em {
+		font-size: var(--fs-xl);
+	}
 
 	@media (--bp-medium) {
 		font-size: var(--fs-3xl);
@@ -25,8 +29,13 @@ h1 {
 
 h2 {
 	font-size: var(--fs-xl);
-	line-height: 1.15;
+	line-height: 0.9;
 	position: relative;
+
+	& em {
+		font-size: var(--fs-xl);
+		line-height: 0.5;
+	}
 
 	@media (--bp-medium) {
 		font-size: var(--fs-2xl);
@@ -34,18 +43,18 @@ h2 {
 }
 
 h3 {
-	font-size: var(--fs-l);
-
-	@media (--bp-medium) {
-		font-size: var(--fs-xl);
-	}
-}
-
-h4 {
 	font-size: var(--fs-m);
 
 	@media (--bp-medium) {
 		font-size: var(--fs-l);
+	}
+}
+
+h4 {
+	font-size: var(--fs-base);
+
+	@media (--bp-medium) {
+		font-size: var(--fs-m);
 	}
 }
 

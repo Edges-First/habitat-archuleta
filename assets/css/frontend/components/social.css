@@ -6,7 +6,13 @@
 	list-style: none;
 	padding: 0;
 
+	& li {
+		line-height: 1;
+	}
+
 	& a {
+		line-height: 1;
+
 		&:hover svg path {
 			fill: var(--c-brand-blue);
 		}

@@ -2,7 +2,7 @@ footer {
 	background-color: var(--c-black);
 	color: var(--c-white);
 	font-size: 1rem;
-	padding: 2rem 0;
+	padding: 1rem;
 
 	& .container {
 		display: flex;
@@ -11,7 +11,7 @@ footer {
 		@media (--bp-medium) {
 			display: grid;
 			gap: 5%;
-			grid-template-columns: 1fr 2fr .5fr;
+			grid-template-columns: .75fr 2fr .75fr;
 			justify-content: space-between;
 		}
 	}
@@ -22,7 +22,7 @@ footer {
 		& .logo {
 			display: block;
 			margin-bottom: 2rem;
-			width: 300px;
+			width: 250px;
 
 			& img {
 				width: 100%;

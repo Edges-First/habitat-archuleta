@@ -34,6 +34,50 @@ function customizer_setup( $customizer ) {
 	);
 
 	$customizer->add_setting(
+		'habitat_archuleta_site_notice',
+		[
+			'default'   => '',
+			'type'      => 'theme_mod',
+			'transport' => 'refresh',
+		]
+	);
+
+	$customizer->add_control(
+		new \WP_Customize_Control(
+			$customizer,
+			'habitat_archuleta_site_notice_control',
+			[
+				'label'    => esc_html__( 'Global Site Notice', 'habitat-archuleta' ),
+				'section'  => 'habitat_archuleta_global',
+				'settings' => 'habitat_archuleta_site_notice',
+				'type'     => 'text',
+			]
+		)
+	);
+
+	$customizer->add_setting(
+		'habitat_archuleta_donate_link',
+		[
+			'default'   => '',
+			'type'      => 'theme_mod',
+			'transport' => 'refresh',
+		]
+	);
+
+	$customizer->add_control(
+		new \WP_Customize_Control(
+			$customizer,
+			'habitat_archuleta_donate_link_control',
+			[
+				'label'    => esc_html__( 'Donate Link', 'habitat-archuleta' ),
+				'section'  => 'habitat_archuleta_global',
+				'settings' => 'habitat_archuleta_donate_link',
+				'type'     => 'text',
+			]
+		)
+	);
+
+	$customizer->add_setting(
 		'habitat_archuleta_address',
 		[
 			'default'   => '',

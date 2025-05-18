@@ -60,13 +60,68 @@
 }
 
 .has-large-font-size {
-	font-size: var(--fs-m) !important;
+	font-size: var(--fs-l) !important;
 }
 
-.has-brand-green-background-color {
+.has-brand-green-background-color,
+.has-brand-yellow-background-color,
+.has-brand-red-background-color,
+.has-brand-blue-background-color {
 	color: var(--c-black);
+}
 
-	&:hover {
-		background-color: var(--c-brand-green-dark) !important;
+.wp-block-pullquote {
+	user-select: none;
+
+	/* stylelint-disable-next-line selector-nested-pattern */
+	.wp-block-habitat-archuleta-content-slider & {
+		margin: 0 auto;
+		width: 90%;
+
+		& cite {
+			font-size: var(--fs-m);
+			font-style: normal;
+			font-weight: 300;
+		}
+
+		& p {
+			font-size: var(--fs-xl);
+			line-height: 1.2;
+			position: relative;
+
+			&::after,
+			&::before {
+				font-family: var(--ff-body);
+				font-size: 80px;
+				font-weight: 400;
+				line-height: 1;
+				position: absolute;
+			}
+
+			&::before {
+				content: "“";
+				left: -40px;
+				top: -15px;
+			}
+
+			&::after {
+				bottom: -70px;
+				content: "”";
+				right: -25px;
+			}
+		}
+
+		@media (--bp-large) {
+			width: 75%;
+
+			& p {
+				font-size: var(--fs-2xl);
+
+				&::before,
+				&::after {
+					font-size: 100px;
+				}
+			}
+		}
 	}
 }

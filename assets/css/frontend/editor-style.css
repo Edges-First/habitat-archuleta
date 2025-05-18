@@ -1,8 +1,8 @@
 /**
- * HeliBlack - Editor Styles
- * https://heli.black
+ * HabitatArchuleta - Editor Styles
+ * https://habitat-archuleta.local
  *
- * Copyright (c) 2017 heli
+ * Copyright (c) 2025 HabitatArchuleta
  * Licensed under the MIT license.
  */
 
@@ -13,6 +13,18 @@
  .editor-styles-wrapper {
 	background-color: var(--c-white);
 
+	& [data-type="habitat-archuleta/accordion"] .accordion-item__content,
+	& [data-type="habitat-archuleta/content-slider"] [data-type="habitat-archuleta/content-slider-item"]:not(:first-of-type),
+	& [data-type="habitat-archuleta/image-slider"] [data-type="habitat-archuleta/image-slider-item"]:not(:first-of-type) {
+		display: none;
+	}
+
+	& [data-type="habitat-archuleta/accordion"].has-child-selected .accordion-item__content,
+	& [data-type="habitat-archuleta/content-slider"].has-child-selected [data-type="habitat-archuleta/content-slider-item"]:not(:first-of-type),
+	& [data-type="habitat-archuleta/image-slider"].has-child-selected [data-type="habitat-archuleta/image-slider-item"]:not(:first-of-type) {
+		display: block;
+	}
+
 	 & .editor-visual-editor__post-title-wrapper {
 			border-bottom: 5px solid var(--c-black);
 			margin-bottom: 4rem;
@@ -21,5 +33,29 @@
 		 & h1 {
 			font-size: var(--fs-l);
 		 }
+	 }
+
+	 & [data-type="habitat-archuleta/image-slider-item"] {
+		& .slider-content {
+			display: flex;
+			padding: 0 0 2rem;
+
+			& .slider-icon {
+				margin-top: 2.5rem !important;
+			}
+
+			& h1 {
+				line-height: 0.9;
+
+				& em {
+					font-size: var(--fs-2xl);
+				}
+			}
+		}
+
+		& .text-content {
+			margin: 0;
+			padding: 0;
+		}
 	 }
  }

@@ -1,0 +1,20 @@
+{
+	"title": "Content Slider Item",
+	"description": "Slide for the Content Slider.",
+	"text-domain": "habitat-archuleta",
+	"name": "habitat-archuleta/content-slider-item",
+	"parent": [
+		"habitat-archuleta/content-slider"
+	],
+	"icon": "feedback",
+	"category": "habitat-archuleta-blocks",
+	"example": {},
+	"supports": {
+		"customClassName": true,
+		"color": {
+			"gradients": false,
+			"background": true,
+			"text": false
+		}
+	}
+}

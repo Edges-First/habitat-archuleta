@@ -78,6 +78,22 @@ function theme_setup() {
 			'label' => __( 'Remove Gap on Mobile' ),
 		)
 	);
+
+	register_block_style(
+		'core/group',
+		array(
+			'name'  => 'section-overlap',
+			'label' => __( 'Overlap with previous section' ),
+		)
+	);
+
+	register_block_style(
+		'core/group',
+		array(
+			'name'  => 'no-margin',
+			'label' => __( 'Remove section padding' ),
+		)
+	);
 }
 
 /**

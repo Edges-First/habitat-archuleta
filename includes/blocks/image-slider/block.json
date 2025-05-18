@@ -1,0 +1,13 @@
+{
+	"title": "Image Slider",
+	"description": "Slider for images.",
+	"text-domain": "habitat-archuleta",
+	"name": "habitat-archuleta/image-slider",
+	"icon": "feedback",
+	"category": "habitat-archuleta-blocks",
+	"example": {},
+	"attributes": {},
+	"supports": {
+		"customClassName": true
+	}
+}

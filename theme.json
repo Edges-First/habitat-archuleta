@@ -86,9 +86,9 @@
 					"slug": "large",
 					"fluid": {
 						"min": "var(--fs-xl)",
-						"max": "var(--fs-4xl)"
+						"max": "var(--fs-2xl)"
 					},
-					"size": "var(--fs-4xl)",
+					"size": "var(--fs-2xl)",
 					"name": "Large"
 				}
 			]
@@ -114,16 +114,16 @@
 					"fontSizes": [
 						{
 							"slug": "h1",
-							"size": "var(--fs-4xl)",
+							"size": "var(--fs-3xl)",
 							"name": "Like h1"
 						},
 						{
 							"slug": "h2",
 							"fluid": {
 								"min": "var(--fs-l)",
-								"max": "var(--fs-4xl)"
+								"max": "var(--fs-xl)"
 							},
-							"size": "var(--fs-4xl)",
+							"size": "var(--fs-xl)",
 							"name": "Like h2"
 						},
 						{

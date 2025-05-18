@@ -192,7 +192,12 @@ header.header {
 			font-weight: 700;
 			padding: var(--sp-s) var(--sp-base);
 			text-decoration: none;
-			transition: color 500ms linear;
+			transition: color 300ms linear;
+
+			&:hover {
+				color: var(--c-brand-blue);
+				text-decoration: underline;
+			}
 
 			@media (--bp-large) {
 				display: block;
@@ -359,7 +364,7 @@ header.header {
 		@media (--bp-large) {
 			& .logo-white,
 			& .logo-color {
-				width: 250px;
+				width: 225px;
 			}
 		}
 	}
@@ -378,6 +383,10 @@ header.header {
 
 			& .primary-menu > li > a {
 				color: var(--c-white);
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 
 			& .menu-toggle {

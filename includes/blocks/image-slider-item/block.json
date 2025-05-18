@@ -1,0 +1,20 @@
+{
+	"title": "Image Slider Item",
+	"description": "Slide for the Image Slider.",
+	"text-domain": "habitat-archuleta",
+	"name": "habitat-archuleta/image-slider-item",
+	"parent": [
+		"habitat-archuleta/image-slider"
+	],
+	"icon": "feedback",
+	"category": "habitat-archuleta-blocks",
+	"example": {},
+	"supports": {
+		"customClassName": true,
+		"color": {
+			"gradients": false,
+			"background": true,
+			"text": false
+		}
+	}
+}

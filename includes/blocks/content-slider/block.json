@@ -1,0 +1,13 @@
+{
+	"title": "Content Slider",
+	"description": "Slider for text content / testimonials.",
+	"text-domain": "habitat-archuleta",
+	"name": "habitat-archuleta/content-slider",
+	"icon": "feedback",
+	"category": "habitat-archuleta-blocks",
+	"example": {},
+	"attributes": {},
+	"supports": {
+		"customClassName": true
+	}
+}
