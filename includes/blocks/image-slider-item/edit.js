@@ -10,15 +10,19 @@ import { editPropsShape } from './props-shape';
  */
 const ImageSliderItemBlockEdit = () => {
 	const innerBlocksTemplate = [
-		['core/cover', { className: 'has-custom-content-position is-position-center-left' }, [
-			['core/group', { className: 'slider-content' }, [
-				['core/image', {
-					className: 'slider-icon',
-					url: 'http://habitat-archuleta.local/wp-content/uploads/2025/05/icon-key.svg',
-				}],
-				['core/group', { className: 'text-content' }, [
-					['core/heading', { level: 1, placeholder: 'Headline' }],
-					['core/paragraph', { placeholder: 'Add Content...' }]
+		['core/group', { className: 'slider-content' }, [
+			['core/columns', { className: 'slider-columns' }, [
+				['core/column', { className: 'slider-column-left' }, [
+					['core/image', {
+						className: 'slider-image',
+						url: 'http://habitat-archuleta.local/wp-content/uploads/2025/05/icon-key.svg',
+					}]
+				]],
+				['core/column', { className: 'slider-column-right' }, [
+					['core/quote', {
+						className: 'slider-quote',
+						placeholder: 'Add your quote here...'
+					}]
 				]]
 			]]
 		]]

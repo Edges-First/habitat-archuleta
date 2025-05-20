@@ -27,7 +27,7 @@
  }
 
  .container,
- .wp-block-group:not(.is-horizontal):not(.alignfull) > *:not(.is-style-reduced-width) {
+ .wp-block-group:not(.is-horizontal):not(.alignfull):not(.container) > *:not(.is-style-reduced-width) {
 	 margin-left: auto;
 	 margin-right: auto;
 	 max-width: var(--wp--style--global--content-size);
@@ -38,7 +38,7 @@
 	 }
  }
 
- .wp-block-group:not(.is-horizontal):not(.is-style-no-margin) {
+ .wp-block-group:not(.is-horizontal):not(.is-style-no-margin):not(.is-style-section-overlap) {
 	 padding: 2rem var(--sp-base);
 
 	 @media (--bp-large) {
@@ -58,6 +58,10 @@
  .wp-block-group.is-style-section-overlap  {
 	margin: -1.25rem auto 2rem;
 	padding: 0 0 1rem;
+ }
+
+ .wp-block-group.is-layout-grid {
+	align-items: center;
  }
 
 .wp-block-media-text.has-background {
