@@ -53,7 +53,7 @@ $disclaimer = get_theme_mod( 'habitat_archuleta_footer_disclaimer' );
 			</div>
 			<nav class="footer-navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 				<div class="wp-block-buttons">
-					<a href="<?php echo esc_url( $donate_link ); ?>" class="wp-block-button__link has-brand-green-background-color has-background has-large-font-size">
+					<a href="<?php echo esc_url( $donate_link ); ?>" class="wp-block-button__link has-brand-green-background-color has-background has-large-font-size" target="_blank">
 						Donate
 					</a>
 				</div>

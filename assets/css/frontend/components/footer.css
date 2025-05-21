@@ -21,7 +21,7 @@ footer {
 
 		& .logo {
 			display: block;
-			margin-bottom: 2rem;
+			margin: 2rem;
 			width: 250px;
 
 			& img {

@@ -11,7 +11,7 @@ $donate_link = get_theme_mod( 'habitat_archuleta_donate_link' );
 			</div>
 			<div class="eyebrow-actions">
 				<?php get_template_part( 'partials/social' ); ?>
-				<a href="<?php echo esc_url( $donate_link ); ?>" class="wp-block-button__link has-brand-green-background-color has-background has-large-font-size">
+				<a href="<?php echo esc_url( $donate_link ); ?>" class="wp-block-button__link has-brand-green-background-color has-background has-large-font-size" target="_blank">
 					Donate
 				</a>
 			</div>

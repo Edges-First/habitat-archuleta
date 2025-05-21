@@ -338,25 +338,13 @@
 	& .slider-content {
 		align-items: flex-start;
 		display: flex;
-		margin-left: 1rem;
-		margin-top: 10rem;
+		gap: 1rem;
 		padding: 1rem !important;
 		position: relative;
-
-		&::before {
-			background-color: var(--c-white);
-			content: "";
-			height: 100%;
-			left: calc(-50% - 1rem);
-			position: absolute;
-			top: 0;
-			width: 50%;
-
-		}
 	}
 
-	& .slider-icon {
-		margin-top: 2.5rem !important;
+	& .wp-block-image {
+		width: 50px;
 	}
 
 	& h1 {
@@ -387,7 +375,23 @@
 		}
 
 		& .slider-content {
-			padding: 0 2rem !important;
+			margin-left: 1rem;
+			margin-top: 10rem !important;
+			padding: 0 2rem 0 1rem !important;
+
+			&::before {
+				background-color: var(--c-white);
+				content: "";
+				height: 100%;
+				left: calc(-50% - 0.75rem);
+				position: absolute;
+				top: 0;
+				width: 50%;
+			}
+		}
+
+		& .slider-icon {
+			margin-top: 2.5rem !important;
 		}
 
 		& h1 {

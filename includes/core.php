@@ -94,6 +94,14 @@ function theme_setup() {
 			'label' => __( 'Remove section padding' ),
 		)
 	);
+
+	register_block_style(
+		'core/group',
+		array(
+			'name'  => 'partial-background',
+			'label' => __( 'Partial Background' ),
+		)
+	);
 }
 
 /**

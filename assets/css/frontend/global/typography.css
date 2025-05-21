@@ -33,12 +33,17 @@ h2 {
 	position: relative;
 
 	& em {
-		font-size: var(--fs-xl);
+		font-size: var(--fs-l);
 		line-height: 0.5;
 	}
 
 	@media (--bp-medium) {
 		font-size: var(--fs-2xl);
+
+		& em {
+			font-size: var(--fs-xl);
+			line-height: 0.5;
+		}
 	}
 }
 
@@ -104,4 +109,8 @@ ul {
 			max-width: 60%;
 		}
 	}
+}
+
+abbr[title] {
+	text-decoration: none;
 }

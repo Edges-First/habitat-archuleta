@@ -69,3 +69,21 @@
 .has-brand-blue-background-color {
 	color: var(--c-black);
 }
+
+.wp-block-group.has-background.is-style-partial-background {
+	&.has-brand-blue-background-color {
+
+		@media (--bp-large) {
+			background: linear-gradient(to bottom, var(--c-brand-blue) 85%, transparent 15%);
+			background-color: transparent !important;
+		}
+	}
+
+	&.has-brand-green-background-color {
+
+		@media (--bp-large) {
+			background: linear-gradient(to bottom, var(--c-brand-green) 80%, transparent 20%);
+			background-color: transparent !important;
+		}
+	}
+}

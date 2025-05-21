@@ -56,8 +56,12 @@
  }
 
  .wp-block-group.is-style-section-overlap  {
-	margin: -1.25rem auto 2rem;
-	padding: 0 0 1rem;
+	margin: 2rem 0 1rem;
+
+	@media (--bp-large) {
+		margin: -1.25rem auto 2rem;
+		padding: 0 0 1rem;
+	}
  }
 
  .wp-block-group.is-layout-grid {

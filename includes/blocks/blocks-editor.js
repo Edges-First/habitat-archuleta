@@ -3,8 +3,8 @@
  * used in editor only
  */
 
-import './example-block';
 import './content-slider';
 import './content-slider-item';
+import './event-cards';
 import './image-slider';
 import './image-slider-item';
