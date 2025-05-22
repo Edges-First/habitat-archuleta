@@ -6,8 +6,10 @@ import { InnerBlocks } from '@wordpress/block-editor';
 import { editPropsShape } from './props-shape';
 
 const ContentSliderBlockSave = () => (
-	<div className="content-slider">
-		<InnerBlocks.Content />
+	<div className="wp-block-habitat-archuleta-content-slider">
+		<div className="content-slider">
+			<InnerBlocks.Content />
+		</div>
 	</div>
 );
 

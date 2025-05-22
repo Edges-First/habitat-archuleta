@@ -1,5 +1,5 @@
 .wp-block-habitat-archuleta-content-slider {
-	& .slider-content.has-background {
+	& .content-slider-item.has-background {
 		&.has-brand-green-background-color {
 
 			@media (--bp-large) {
@@ -7,15 +7,31 @@
 				background-color: transparent !important;
 			}
 		}
+
+		&.has-brand-yellow-background-color {
+
+			@media (--bp-large) {
+				background: linear-gradient(to bottom, var(--c-brand-yellow) 80%, transparent 20%);
+				background-color: transparent !important;
+			}
+		}
+
+		&.has-brand-blue-background-color {
+
+			@media (--bp-large) {
+				background: linear-gradient(to bottom, var(--c-brand-blue) 80%, transparent 20%);
+				background-color: transparent !important;
+			}
+		}
 	}
 
 	& .container {
 		margin: 0 auto !important;
-		padding: 0 !important;
 
 		@media (--bp-large) {
 			display: flex;
 			gap: 2rem;
+			padding: 0 4rem !important;
 		}
 	}
 

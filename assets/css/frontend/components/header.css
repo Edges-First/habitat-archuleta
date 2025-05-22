@@ -188,7 +188,7 @@ header.header {
 		& > li > a {
 			color: var(--c-black);
 			display: inline-block;
-			font-size: var(--fs-m);
+			font-size: var(--fs-s);
 			font-weight: 700;
 			padding: var(--sp-s) var(--sp-base);
 			text-decoration: none;
@@ -201,7 +201,6 @@ header.header {
 
 			@media (--bp-large) {
 				display: block;
-				font-size: var(--fs-base);
 				padding: var(--sp-2xs) var(--sp-base);
 			}
 		}

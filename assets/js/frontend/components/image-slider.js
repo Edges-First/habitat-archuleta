@@ -35,15 +35,20 @@ export default class ImageSlider {
 	setupSlider(slider) {
 		const tnsSlider = tns({
 			container: slider,
+			mode: 'gallery',
 			items: 1,
 			controls: true,
-			controlsPosition: 'bottom',
 			nav: false,
 			mouseDrag: true,
-			speed: 2000,
+			speed: 3000,
 			autoplay: true,
 			autoHeight: true,
 			center: true,
+			onInit: (e) => {
+				// stylize the buttons
+				e.prevButton?.classList.add('wp-block-button__link');
+				e.nextButton?.classList.add('wp-block-button__link');
+			},
 		});
 
 		return tnsSlider;
