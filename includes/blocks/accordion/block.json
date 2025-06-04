@@ -1,0 +1,13 @@
+{
+	"title": "Accordion",
+	"description": "Collabsable/expandable accordions.",
+	"text-domain": "habitat-archuleta",
+	"name": "habitat-archuleta/accordion",
+	"icon": "feedback",
+	"category": "habitat-archuleta-blocks",
+	"example": {},
+	"attributes": {},
+	"supports": {
+		"customClassName": true
+	}
+}

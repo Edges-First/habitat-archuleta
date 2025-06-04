@@ -5,6 +5,7 @@ import {
 import Navigation from './components/navigation';
 import Slider from './components/slider';
 import ImageSlider from './components/image-slider';
+import Accordion from './components/accordions';
 
 const navigation = new Navigation();
 navigation.init();
@@ -23,3 +24,6 @@ slider.init();
 
 const gallery = new ImageSlider('.image-slider');
 gallery.init();
+
+const accordion = new Accordion('.accordion');
+accordion.init();

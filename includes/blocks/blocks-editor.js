@@ -8,3 +8,5 @@ import './content-slider-item';
 import './event-cards';
 import './image-slider';
 import './image-slider-item';
+import './accordion';
+import './accordion-item';
