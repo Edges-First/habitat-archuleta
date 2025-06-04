@@ -18,11 +18,24 @@
 $events = tribe_get_events( [
 	'posts_per_page' => 3,
 	'featured'       => true,
+	'start_date'     => 'now',
 ] );
+
+if ( count( $events ) < 3 ) {
+	$more_events = tribe_get_events( [
+		'posts_per_page' => 3 - count( $events ),
+		'featured'       => false,
+		'start_date'     => 'now',
+		'orderby'        => 'date',
+		'order'          => 'ASC',
+	] );
+}
+
+$all_events = array_merge( $events, $more_events );
 ?>
 
 <div class="wp-block-event-cards">
-	<?php foreach ( $events as $post ) : ?>
+	<?php foreach ( $all_events as $post ) : ?>
 		<?php setup_postdata( $post ); ?>
 		<div class="wp-block-event-card">
 			<div class="wp-block-event-card__date">
@@ -41,7 +54,7 @@ $events = tribe_get_events( [
 					</div>
 				<?php endif; ?>
 				<div class="wp-block-event-card__time">
-					Starts at <?php echo tribe_get_start_date( $post, true ); ?>
+					Starts at <?php echo tribe_get_start_time( $post ); ?>
 				</div>
 				<div class="wp-block-button">
 					<a href="<?php echo get_the_permalink( $post ); ?>" class="wp-block-button__link has-brand-green-background-color has-background wp-element-button has-reduced-spacing">view details</a>

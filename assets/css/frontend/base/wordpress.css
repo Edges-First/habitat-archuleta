@@ -87,3 +87,23 @@
 		}
 	}
 }
+
+.wp-block-image {
+	&.is-style-is-cover {
+		& img {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+}
+
+.wp-block-columns {
+	&.is-style-mimic-media-text {
+		gap: 1rem;
+
+		& .wp-block-column {
+			padding: 4rem 8%;
+		}
+	}
+}

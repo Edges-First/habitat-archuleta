@@ -23,6 +23,14 @@
 				background-color: transparent !important;
 			}
 		}
+
+		&.has-brand-gray-light-background-color {
+
+			@media (--bp-large) {
+				background: linear-gradient(to bottom, var(--c-brand-gray-light) 80%, transparent 20%);
+				background-color: transparent !important;
+			}
+		}
 	}
 
 	& .container {

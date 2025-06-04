@@ -102,6 +102,14 @@ function theme_setup() {
 			'label' => __( 'Partial Background' ),
 		)
 	);
+
+	register_block_style(
+		'core/columns',
+		array(
+			'name'  => 'mimic-media-text',
+			'label' => __( 'Offset Columns' ),
+		)
+	);
 }
 
 /**

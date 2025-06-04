@@ -58,6 +58,7 @@
 
 		& em {
 			font-size: var(--fs-l);
+			font-style: normal;
 		}
 	}
 
@@ -103,11 +104,13 @@
 		& h1 {
 			& em {
 				font-size: var(--fs-xl);
+				font-style: normal;
 			}
 		}
 
 		& .text-content {
 			font-size: var(--fs-l);
+			padding-top: 1rem !important;
 
 			& p {
 				padding: 2rem 0 !important;

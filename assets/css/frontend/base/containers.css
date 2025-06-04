@@ -26,8 +26,21 @@
 	 overflow: hidden;
  }
 
+ /* Add padding to the top of internal pages, to account for sticky header */
+ main,
+ #tribe-events-pg-template,
+ .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+	padding-top: 165px;
+ }
+
+ .home main {
+	padding-top: 0;
+ }
+
  .container,
- .wp-block-group:not(.is-horizontal):not(.alignfull):not(.container) > *:not(.is-style-reduced-width) {
+ .wp-block-group:not(.is-horizontal):not(.alignfull):not(.container) > *:not(.is-style-reduced-width),
+ #tribe-events-pg-template,
+ .tribe-common .tribe-common-l-container {
 	 margin-left: auto;
 	 margin-right: auto;
 	 max-width: var(--wp--style--global--content-size);
