@@ -27,6 +27,11 @@ jobs:
       - name: Install & Build
         run: npm run build-release
 
+      - name: Extract SSH key
+        run: |
+          echo ${{ secrets.SSH_PRIVATE_KEY }} | base64 -d > ~/.ssh/id_ed25519
+          chmod 0600 ~/.ssh/id_ed25519
+
       - name: Upload to server
         run: |
           rsync -avrxc --exclude-from='.deployignore' ./ github@137.184.235.46:/var/www/staging.habitatarchuleta.org/wp-content/themes/habitat-archuleta/
