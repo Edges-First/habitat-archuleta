@@ -29,8 +29,10 @@ jobs:
 
       - name: Extract SSH key
         run: |
+          mkdir -p ~/.ssh/
           echo ${{ secrets.SSH_PRIVATE_KEY }} | base64 -d > ~/.ssh/id_ed25519
           chmod 0600 ~/.ssh/id_ed25519
+          chmod 0700 ~/.ssh
 
       - name: Add host key
         run: |
